@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1 Safety by Design</title>
+  <script src="https://unpkg.com/intersection-observer"></script>
+  <script src="https://unpkg.com/scrollama"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="st.css">
+</head>
+
+<body>
+  <header id="hero-section">   
+    <div class="hero-content" id="hero-content">
+      <div class="step">
+        <div class="title">
+          <h1>SAFETY BY DESIGN</h1>
+        </div>
+        <div class="subtitle">
+          <h2>HOW TRAGEDIES TRANSFORMED FORMULA 1 CARS</h2>
+        </div>
+      </div>
+    </div>
+    <p class="credit">AYRTON SENNA, WATCH CAMPAIGN</p>
+
+    <div id="curtain"></div>
+  </header>
+
+  <main>
+    <nav>
+      <ul>
+        <li><a href="#intro">ABOUT</a></li>
+        <li><a href="#vis1">VIS 1</a></li>
+        <li><a href="#vis2">VIS 2</a></li>
+      </ul>
+    </nav>
+
+    <div id="content">
+      <section id="intro" class="inactive">
+        <div class="section-content">
+          <h3>WHAT IS F1?</h3>
+          <p>Giving a brief introduction as to what F1 is as a point of entry for those who are not fanatics, but still are
+            interested in the topic.</p>
+          <div class="image-grid">
+            <div class="image-placeholder">Image 1</div>
+            <div class="image-placeholder">Image 2</div>
+            <div class="image-placeholder">Image 3</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="vis1" class="inactive">
+        <div class="section-content">
+          <h3>VIS 1</h3>
+          <p>Visualization of the world map showcasing the different F1 track locations around the world to show F1's
+            popularity.</p>
+            <iframe width="100%" height="576" frameborder="0"
+            src="https://observablehq.com/embed/16a87608c3829495@302?cells=raceTracks"></iframe>
+        </div>
+      </section>
+
+      <section id="evolution" class="inactive">
+        <div class="section-content">
+          <h3>EVOLUTION OF F1 CARS</h3>
+          <p>Showing the history of F1 cars and how they have changed today.</p>
+          <div class="timeline-placeholder">Timeline Visualization</div>
+        </div>
+      </section>
+
+      <section id="turning-points" class="inactive">
+        <div class="section-content">
+          <h3>TURNING POINTS IN F1</h3>
+          <p>This section will highlight two drivers, as their deaths caused evolutionary changes in F1 cars and their
+            designs.</p>
+          <div class="drivers">
+            <div class="driver">
+              <h4>Jules Bianchi</h4>
+              <div class="image-placeholder">Image</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+            </div>
+            <div class="driver">
+              <h4>Ayrton Senna</h4>
+              <div class="image-placeholder">Image</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+            </div>
+          </div>        
+        </div>
+      </section>
+    
+      <section id="vis2" class="inactive">
+        <div class="section-content">
+          <h3>VIS 2</h3>
+          <p>Visualization of fatal and non-fatal crashes and how some corresponded to evolution in the design of F1 cars to
+            promote safety.</p>
+        </div>
+      </section>
+
+      <footer id="closing" class="inactive">
+        <h3>CLOSING STATEMENT</h3>
+        <p>Final review of the storyline, etc.</p>
+      </footer>
+    </div>
+
+    <div class="step page" id="page-hero" data-type="progressive"></div>
+    <div class="step page" id="page-intro" data-type="progressive" data-section="intro"></div>
+    <div class="step page" id="page-vis1" data-type="progressive" data-section="vis1"></div>
+    <div class="step page" id="page-evolution" data-type="progressive" data-section="evolution"></div>
+    <div class="step page" id="page-turning-points" data-type="progressive" data-section="turning-points"></div>
+    <div class="step page" id="page-vis2" data-type="progressive" data-section="vis2"></div>
+    <div class="step page" id="page-closing" data-type="progressive" data-section="closing"></div>
+
+    <div id="page-progress-bar" class="hidden">
+      <div class="progress-bar">
+        <div class="progress-bar-fill"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
