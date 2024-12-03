@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -5,43 +6,47 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Neue Haas Grotesk", sans-serif;
     font-optical-sizing: auto;
-    line-height: 1.6;
+    line-height: 1.4;
     margin: 40px;
+    font-weight: lighter;
     background-color: #181818;
     color: #ffffff;
+    margin-top: 10;
 }
 
 h1 {
-    font-family: "Chakra Petch", sans-serif; 
+    font-family: "Formula1", sans-serif; 
     font-weight: 700;
 }
 
 nav {
     position: fixed;
+    font-weight: bold;
     top: 80px;
-    left: 50%;
+    left: 21.5%;
     transform: translateX(-50%);
     z-index: 10000;
+
 }
 
 nav ul {
+    font-family: "Neue Haas Grostek", sans-serif;
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 60px;
     justify-content: center;
 }
 
 nav ul li {
-    font-size: 1rem;
+    font-size: 0.65rem;
 }
 
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
     transition: color 0.25s ease;
-
 }
 
 nav ul li a:hover {
@@ -58,10 +63,19 @@ section {
 }
 
 section h3 {
-    font-family: 'Chakra Petch';
-    font-size: 1.8rem;
+    font-family: 'Formula1';
+    font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 10px;
+}
+
+section h4 {
+    font-family: 'Formula1';
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 100;
+    color: #e74c3c;
 }
 
 section p {
@@ -80,12 +94,12 @@ section > .section-content {
 
 header#hero-section {
     height: 100vh;
-    background: url('Images/hero.avif') no-repeat center center/cover;
+    background: url('Images/ferrari.png') no-repeat center center/cover;
     color: #ffffff;
     position: fixed;
-    top: 40px;
-    left: 40px;
-    right: 40px;
+    top: 1px;
+    left: 1px;
+    right: 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,14 +135,15 @@ header#hero-section * {
 }
 
 header#hero-section .hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-}
+    margin-top: -280px;
+    font-size: 6rem;
+    margin-bottom: 1px;
+  }
 
-header#hero-section .hero-content h2 {
-    font-size: 2rem;
-    font-weight: 200;
-}
+  header#hero-section .hero-content h2 {
+    margin-top: -30px;
+    font-size: 2.24rem;
+  }
 
 header#hero-section .hero-content h2 span {
     color: #e74c3c;
@@ -149,7 +164,7 @@ header#hero-section .credit {
 .image-placeholder {
     flex: 1;
     height: 150px;
-    background-color: #333;
+    background-color: #868686;
     display: flex;
     align-items: center;
     justify-content: center;

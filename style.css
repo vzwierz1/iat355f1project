@@ -15,11 +15,11 @@
   
   header#hero-section {
     height: 100vh;
-    background: url('Images/hero.avif') no-repeat center center/cover;
+    background: url('Images/ferrari.png') no-repeat center center/cover;
     color: #ffffff;
     position: relative;
     display: flex;
-    flex-direction: column;
+
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -73,12 +73,14 @@
   
   
   header#hero-section .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    margin-top: 1px;
+    font-size: 6rem;
+    margin-bottom: 1px;
   }
   
   header#hero-section .hero-content h2 {
-    font-size: 2rem;
+    margin-top: -30px;
+    font-size: 2.24rem;
   }
   
   header#hero-section .hero-content h2 span {
