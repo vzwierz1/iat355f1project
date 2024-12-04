@@ -93,8 +93,8 @@ section > .section-content {
 
 
 header#hero-section {
-    height: 100vh;
-    background: url('/f1project/Images/ferrari.png') no-repeat center center/cover;
+    height: 120vh;
+    background: url('Images/ferrari.png') no-repeat center center/cover;
     color: #ffffff;
     position: fixed;
     top: 1px;
