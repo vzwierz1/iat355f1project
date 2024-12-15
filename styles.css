@@ -1,3 +1,9 @@
+:root {
+    --layout-top-padding: 8rem;
+    --layout-left-padding: 1.5rem;
+    --sidebar-width: 14rem;
+    --sidebar-gap: 2rem;
+}
 
 * {
     margin: 0;
@@ -9,7 +15,6 @@ body {
     font-family: "Neue Haas Grotesk Display Pro", sans-serif;
     font-optical-sizing: auto;
     line-height: 1.4;
-    margin: 40px;
     font-weight: lighter;
     background-color: #181818;
     color: #ffffff;
@@ -17,11 +22,46 @@ body {
 }
 
 h1 {
-    font-family: "Formula1 Display-Black", sans-serif; 
+    font-family: "Formula1 Display-Black", sans-serif;
     font-weight: 700;
 }
 
-nav {
+#sidemenu {
+    position: fixed;
+    top: var(--layout-top-padding);
+    left: var(--layout-left-padding);
+    width: 14rem;
+    z-index: 100;
+}
+
+#sidemenu ul {
+    list-style-type: none;
+}
+
+#sidemenu ul li {
+    padding-bottom: 1.2rem;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+#sidemenu ul li.active {
+    padding-bottom: 1.7rem;
+    font-weight: 700;
+}
+
+#sidemenu ul li:not(:first-child).active {
+    padding-top: 0.5rem;
+}
+
+#sidemenu ul li a,
+#sidemenu ul li a:hover,
+#sidemenu ul li a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/*nav {
     position: fixed;
     font-weight: bold;
     top: 80px;
@@ -51,7 +91,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #e74c3c;
-}
+}*/
 
 section {
     position: absolute;
@@ -85,7 +125,7 @@ section p {
     font-size: 0.9rem;
 }
 
-section > .section-content {
+section>.section-content {
     width: 100%;
     max-width: 1000px;
     padding: 30px;
@@ -126,12 +166,12 @@ header#hero-section::before {
     z-index: 1;
 }
 
-header#hero-section > #curtain {
+header#hero-section>#curtain {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 0;    
+    height: 0;
     background-color: #181818;
     z-index: 10;
 }
@@ -145,12 +185,12 @@ header#hero-section .hero-content h1 {
     margin-top: -280px;
     font-size: 6rem;
     margin-bottom: 1px;
-  }
+}
 
-  header#hero-section .hero-content h2 {
+header#hero-section .hero-content h2 {
     margin-top: -30px;
     font-size: 2.24rem;
-  }
+}
 
 header#hero-section .hero-content h2 span {
     color: #e74c3c;
@@ -211,11 +251,7 @@ main {
 }
 
 #content {
-    position: fixed;
-    top: 70px;
-    left: 40px;
-    right: 40px;
-    z-index: 1000;
+    margin-left: calc(var(--sidebar-width) + 2rem);
 }
 
 .page {
@@ -236,9 +272,26 @@ main {
     justify-content: center;
 }
 
+#clipper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    z-index: 10;
+}
+
+.section.hero {
+    height: 150vh;
+}
+
+.section.double {
+    height: 200vh;
+}
+
 .progress-bar {
     width: 1000px;
-    height: 2px;   
+    height: 2px;
 }
 
 .progress-bar-fill {
@@ -260,7 +313,7 @@ main {
 
 .active {
     opacity: 1;
-    transition: 0.3s linear;
+    transition: all 0.3s ease-in-out, font-weight 0s linear;
 }
 
 .hidden {
@@ -269,4 +322,230 @@ main {
 
 #vis1 p {
     margin-bottom: 0;
+}
+
+#progress-bar {
+    width: 100%;
+    max-width: 70%;
+    height: 2px;
+    margin-top: 0.6rem;
+}
+
+#progress-bar>#progress-bar-fill {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: #EC5031;
+}
+
+#progress-bar>#progress-bar-fill::after {
+    content: '';
+    width: 71.4px;
+    height: 13.7px;
+    margin-left: -68px;
+    background: url('i/ui/sidemenu/noun_f1car.svg') 100% 100%;
+    transform: translate(68px, -1px) scale(0.75);
+}
+
+#backdrop {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #181818;
+    z-index: 1;
+    transition: height 0.75s ease-out;
+}
+
+#backdrop.collapsed {
+    height: 0vh;
+}
+
+#hero-static {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url('i/ferrari.png') no-repeat center center/cover;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 0.25s ease-in-out;
+}
+
+#hero-static::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+#hero-static__content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+}
+
+#hero-static__content header {
+    transform: translateY(-11rem) scale(1.5);
+}
+
+#hero-static__content header h1 {
+    font-size: 3.9rem;
+}
+
+#hero-static__content header h2 {
+    font-family: 'Formula1 Display-Black', sans-serif;
+}
+
+#hero-static__content__prompt,
+#hero-static__content__credit {
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 0.65rem;
+    font-weight: bold;
+}
+
+#hero-static__content__prompt {
+    position: absolute;
+    left: auto;
+    bottom: 1rem;
+}
+
+#hero-static__content__credit {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    font-weight: normal;
+}
+
+#section-post-hero-spacer {
+    height: 18rem;
+}
+
+.static-right-pane {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100vw - var(--sidebar-width) - var(--sidebar-gap));
+    z-index: 10;
+}
+
+#intro-static__video-bg video {
+    width: 100%;
+    height: 100%;
+    filter: sepia(40%);
+    opacity: 0.85;
+}
+
+#intro-static__video-bg video source {
+    object-fit: cover;
+}
+
+#popularity-static {
+    height: 100%;
+    background-color: rgb(80, 80, 80);
+}
+
+.section {
+    padding: 2rem;
+}
+
+.section.intro {
+    height: 100rem;
+}
+
+.section-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+#section-header h1 {
+    position: fixed;
+    padding: 0 0.66rem;
+    display: block;
+    top: var(--layout-top-padding);
+    left: calc(var(--sidebar-width) + 4rem);
+    background-color: #181818;
+    z-index: 10;
+}
+
+.text-block {
+    padding: 1rem;
+    width: 100%;
+    font-weight: 400;
+    background-color: rgba(80, 80, 80, 0.9);
+    border-radius: 6px;
+}
+
+.image-grid {
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    font-weight: 400;
+    background-color: rgba(80, 80, 80, 0.9);
+    border-radius: 6px;
+    justify-content: space-between;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.padding-med {
+    padding: 2em;
+}
+
+.grid-col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.col-2 {
+    grid-column-start: 2;
+}
+
+.row-2 {
+    grid-row-start: 2;
+}
+
+/* citation: https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
+blockquote {
+    width: 25rem;
+    background: none;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    color: #fff;
+    font-family: 'Libre Bodoni';
+    font-size: 1.25rem;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 2em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
 }
