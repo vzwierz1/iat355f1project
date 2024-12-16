@@ -1,6 +1,7 @@
 :root {
     --layout-top-padding: 8rem;
     --layout-left-padding: 1.5rem;
+    --layout-content-padding: 12.25rem;
     --sidebar-width: 14rem;
     --sidebar-gap: 2rem;
 }
@@ -437,7 +438,7 @@ main {
     position: fixed;
     top: 0;
     right: 0;
-    width: calc(100vw - var(--sidebar-width) - var(--sidebar-gap));
+    width: calc(100% - var(--sidebar-width) - var(--sidebar-gap));
     z-index: 10;
 }
 
@@ -454,15 +455,12 @@ main {
 
 #popularity-static {
     height: 100%;
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(196, 196, 196);
 }
 
 .section {
+    position: relative;
     padding: 2rem;
-}
-
-.section.intro {
-    height: 100rem;
 }
 
 .section-content {
@@ -476,10 +474,26 @@ main {
     position: fixed;
     padding: 0 0.66rem;
     display: block;
-    top: var(--layout-top-padding);
+    top: calc(var(--layout-top-padding) - 0.75rem);
     left: calc(var(--sidebar-width) + 4rem);
     background-color: #181818;
     z-index: 10;
+}
+
+#section-intro {
+    height: 100rem;
+}
+
+#section-intro .section-content {
+    margin-top: -320px;
+}
+
+#section-f1-popularity {
+    height: 300rem;
+}
+
+#section-f1-popularity .section-content {
+    margin-top: -600px;
 }
 
 .text-block {
@@ -488,6 +502,19 @@ main {
     font-weight: 400;
     background-color: rgba(80, 80, 80, 0.9);
     border-radius: 6px;
+}
+
+.text-block-no-bg {
+    width: 100%;
+    font-weight: 400;
+}
+
+.sticky {
+    position: sticky;
+    top: var(--layout-content-padding);
+    left: 0;
+    height: fit-content;
+    z-index: 10;
 }
 
 .image-grid {
@@ -508,6 +535,10 @@ main {
 
 .padding-med {
     padding: 2em;
+}
+
+.color-dark-gray {
+    color: #181818;
 }
 
 .grid-col-2 {
@@ -539,6 +570,7 @@ blockquote {
 
 blockquote:before {
     color: #ccc;
+    color: #333333;
     content: open-quote;
     font-size: 2em;
     line-height: 0.1em;
@@ -548,4 +580,54 @@ blockquote:before {
 
 blockquote p {
     display: inline;
+}
+
+#section-f1-popularity__racetrack-map-block {
+    height: 100%;
+}
+
+#grid-racetrack-map {
+    height: 100%;
+    grid-template-columns: 19rem max-content;
+    gap: 2rem;
+}
+
+#racetrack-map {
+    margin-top: 0.3rem;
+    background-color: #181818;
+    z-index: 10;
+}
+
+#racetrack-map-textboxes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#racetrack-map-textboxes > div {
+    position: absolute;
+}
+
+#racetrack-map-textboxes .map-textbox {
+    font-weight: 400;
+    color: #212020;
+    background: rgba(255, 255, 255, 0.9);
+    text-shadow: none;
+}
+
+#racetrack-map-textboxes .map-textbox::before, #racetrack-map-textboxes .map-textbox::after {
+    border-top: 10px solid rgba(255, 255, 255, 0.9);
+}
+
+#racetrack-map-textboxes__box_monaco {
+    top: 240px;
+    left: 445px;
+}
+
+#racetrack-map-textboxes__box_suzuka {
+    top: 260px;
+    left: 748px;
 }
