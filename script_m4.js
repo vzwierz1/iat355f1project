@@ -169,12 +169,12 @@ function progressSection_PopularityOfF1(progress) {
             racetrackMapText = "Formula 1 isn’t just about speed, it’s about the spectacle. The roar of engines, the thrill of split-second decisions, and the drama of navigating the world’s most dangerous circuits have all fueled its rise in popularity. But behind the glamour and global appeal lies a darker side: crashes that pushed both drivers and machines to their limits. These moments of danger didn’t just grab headlines; they became the catalyst for some of the most important innovations in the sport’s history.";
             break;
         case 1:
-            racetrackMapText = "Monaco’s narrow streets? They pushed engineers to come up with better crash barriers.";
+            racetrackMapText = "Monaco's Grand Prix circuit, with its narrow and twisting streets, has often been the backdrop for Formula 1's most thrilling and dangerous moments. Amid the tight turns and glitzy setting, tragic incidents have spurred major advances in safety and technology. One such incident took place at the Harbor Chicane, a notorious part of the track where the harsh realities of high-speed racing have become all too clear.";
             document.getElementById('racetrack-map-textboxes__box_monaco').classList.add('active');
             break;
         case 2:
             document.getElementById('racetrack-map-textboxes__box_suzuka').classList.add('active');
-            racetrackMapText = "Suzuka’s famous corners? They taught F1 how to design run-off areas.";
+            racetrackMapText = "Suzuka Circuit, renowned for its famous corners, has consistently pushed the boundaries of Formula 1's safety standards. The complexity of the track layout necessitates precise run-off areas, crucial in mitigating the risks posed by high-speed racing. One pivotal moment highlighting this necessity occurred during the Japanese Grand Prix, underscoring the ongoing evolution of safety measures within the sport.";
             break;
         case 3:
             document.getElementById('racetrack-map-textboxes__box_monaco2').classList.add('active');
