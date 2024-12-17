@@ -174,7 +174,7 @@ function progressSection_PopularityOfF1(progress) {
             break;
         case 2:
             document.getElementById('racetrack-map-textboxes__box_suzuka').classList.add('active');
-            racetrackMapText = "Suzuka Circuit, renowned for its famous corners, has consistently pushed the boundaries of Formula 1's safety standards. The complexity of the track layout necessitates precise run-off areas, crucial in mitigating the risks posed by high-speed racing. One pivotal moment highlighting this necessity occurred during the Japanese Grand Prix, underscoring the ongoing evolution of safety measures within the sport.";
+            racetrackMapText = "Suzuka Circuit, renowned for its famous corners, has consistently pushed the boundaries of Formula 1's safety standards. The complexity of the track layout necessitates precise run-off areas, crucial in mitigating the risks posed by high-speed racing. One fatal moment highlighting this necessity occurred during the Japanese Grand Prix, underscoring the ongoing evolution of safety measures within the sport.";
             break;
         case 3:
             document.getElementById('racetrack-map-textboxes__box_monaco2').classList.add('active');
