@@ -166,7 +166,7 @@ function progressSection_PopularityOfF1(progress) {
 
     switch (currentStep) {
         case 0:
-            racetrackMapText = "Take a look at the world of Formula 1 with this map of track locations around the globe. From the glamorous streets of Monaco to Japan's Suzuka Circuit, these tracks show just how far F1’s excitement and passion reach, bringing fans together no matter where they are.";
+            racetrackMapText = "Formula 1 isn’t just about speed, it’s about the spectacle. The roar of engines, the thrill of split-second decisions, and the drama of navigating the world’s most dangerous circuits have all fueled its rise in popularity. But behind the glamour and global appeal lies a darker side: crashes that pushed both drivers and machines to their limits. These moments of danger didn’t just grab headlines; they became the catalyst for some of the most important innovations in the sport’s history.";
             break;
         case 1:
             racetrackMapText = "Monaco’s narrow streets? They pushed engineers to come up with better crash barriers.";
