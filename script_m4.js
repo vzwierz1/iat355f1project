@@ -178,7 +178,7 @@ function progressSection_PopularityOfF1(progress) {
             break;
         case 3:
             document.getElementById('racetrack-map-textboxes__box_monaco2').classList.add('active');
-            racetrackMapText = "Monaco’s so tight that even modern cars barely fit!";
+            racetrackMapText = "Monaco's Grand Prix circuit is famously tough. Its narrow streets and tight corners leave no room for mistakes, making it one of the most demanding tracks in Formula 1. Over the years, several serious crashes and tragic events have forced changes to make it safer. Despite these improvements, the track remains a huge challenge for drivers, combining the thrill of high-speed racing with the constant risk of accident.";
             break;
     }
 
