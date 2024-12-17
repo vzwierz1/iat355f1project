@@ -35,7 +35,7 @@
                     <li id="sidemenu-f1-popularity"><a href="#section-f1-popularity">The Popularity of F1</a>
                         <div></div>
                     </li>
-                    <li id="sidemenu-f1-evolution"><a href="#vis2">Evolution of Cars</a>
+                    <li id="sidemenu-f1-evolution"><a href="#section-f1-evolution">Evolution of Cars</a>
                         <div></div>
                     </li>
                     <li id="sidemenu-turning-points"><a href="#vis2">Turning Points</a>
@@ -68,6 +68,8 @@
             </div>
 
             <div id="popularity-static" class="static-right-pane hidden"></div>
+
+            <div id="evolution-of-cars-static" class="static-right-pane hidden"></div>
 
             <div class="step section hero" id="section-hero" data-sidemenu-hidden="true" data-heading-hidden="true">
             </div>
@@ -122,18 +124,72 @@
                                 <p></p>
                             </div>
                         </div>
+
                         <div class="sticky">
                             <div id="racetrack-map"></div>
                             <div id="racetrack-map-textboxes">&nbsp;
                                 <div id="racetrack-map-textboxes__box_monaco" class="map-textbox-container">
-                                    <div class="map-textbox">Praesent ut tincidunt ligula. Donec at sem sit amet nulla porttitor consequat sit amet quis velit. Phasellus imperdiet mi in velit gravida tincidunt.</div>
+                                    <div class="map-textbox">Praesent ut tincidunt ligula. Donec at sem sit amet nulla
+                                        porttitor consequat sit amet quis velit. Phasellus imperdiet mi in velit gravida
+                                        tincidunt.</div>
                                 </div>
                                 <div id="racetrack-map-textboxes__box_suzuka" class="map-textbox-container">
-                                    <div class="map-textbox">Curabitur nec varius eros. Duis semper tellus vitae felis laoreet sagittis. Etiam congue feugiat dictum.</div>
+                                    <div class="map-textbox">Curabitur nec varius eros. Duis semper tellus vitae felis
+                                        laoreet sagittis. Etiam congue feugiat dictum.</div>
                                 </div>
                             </div>
                         </div>
-                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="step section double" id="section-f1-evolution" data-sidemenu-id="sidemenu-f1-evolution"
+                data-heading-text="Evolution of F1" data-type="progressive">
+                <div id="section-f1-evolution__cars" class="section-content">
+                    <div class="grid-col-2" id="grid-cars">
+                        <div class="sticky">
+                            <h4 id="section-f1-evolution__cars__sub-heading"></h4>
+                            <div id="section-f1-evolution__cars__text" class="text-block-no-bg color-white">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div id="section-f1-evolution__cars__main" class="sticky">
+                            <div id="section-f1-evolution__cars__car-graphic">
+                                <img id="section-f1-evolution__cars__car-graphic__image" alt="f1 car graphic" />
+                                <img id="section-f1-evolution__cars__car-graphic__overlay-image" class="hidden" alt="f1 car graphic comparison overlay" />
+
+                                <input type="range" id="section-f1-evolution__cars__car-graphic__year-slider"
+                                    name="section-f1-evolution__cars__car-graphic__year-slider" min="0" max="19" />
+                                <div
+                                    style="display: flex; width: 100%; align-items: center; justify-content: space-between; margin-top: 0.5rem;">
+                                    <label for="section-f1-evolution__cars__car-graphic__year-slider"
+                                        id="section-f1-evolution__cars__car-graphic__year-slider__label">Year</label>
+                                    <span style="font-size: 0.7rem; font-weight: 400;">Click on the slider to stop the
+                                        animation</span>
+                                </div>
+                            </div>
+
+                            <div id="section-f1-evolution__cars__overlay-controls">
+                                <div style="display: flex; align-items: center;">
+                                    <input type="checkbox"
+                                        id="section-f1-evolution__cars__compare-checkbox"
+                                        name="section-f1-evolution__cars__compare-checkbox" />
+                                    <label for="section-f1-evolution__cars__compare-checkbox" id="section-f1-evolution__cars__compare-checkbox__label">Compare a
+                                        Car</label>
+                                </div>
+
+                                <div>
+                                    <input type="range" id="section-f1-evolution__cars__compare-slider"
+                                        name="section-f1-evolution__cars__compare-slider" min="1950" max="2022" />
+                                    <div style="margin-top: 0.5rem;">
+                                        <label for="section-f1-evolution__cars__compare-slider"
+                                            id="section-f1-evolution__cars__compare-slider__label">Year</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
