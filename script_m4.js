@@ -177,7 +177,7 @@ function progressSection_PopularityOfF1(progress) {
             racetrackMapText = "Suzuka’s famous corners? They taught F1 how to design run-off areas.";
             break;
         case 3:
-            document.getElementById('racetrack-map-textboxes__box_monaco').classList.add('active');
+            document.getElementById('racetrack-map-textboxes__box_monaco2').classList.add('active');
             racetrackMapText = "Monaco’s so tight that even modern cars barely fit!";
             break;
     }
