@@ -117,6 +117,24 @@
 
             <div class="step section double" id="section-f1-popularity" data-sidemenu-id="sidemenu-f1-popularity"
                 data-heading-text="POPULARITY OF F1" data-type="progressive">
+                <div id="section-f1-popularity__sports-comparison" class="section-content">
+                    <div class="grid-row-2" id="grid-sports-comparison">
+                        <div class="sticky">
+                            <div id="sports-comparison-text" class="text-block-no-bg color-dark-gray">
+                                <p></p>
+                            </div>
+                        </div>
+
+                        <div id="section-f1-popularity__sports-comparison__charts" class="sticky">
+                            <div id="section-f1-popularity__sports-comparison__chart-1" class="chart-default hidden"></div>
+                            <div id="section-f1-popularity__sports-comparison__chart-2" class="chart-default hidden"></div>
+                            <div id="section-f1-popularity__sports-comparison__chart-3" class="chart-default hidden"></div>
+                            <div id="section-f1-popularity__sports-comparison__chart-4" class="chart-default hidden"></div>
+                            <div id="section-f1-popularity__sports-comparison__chart-5" class="chart-default hidden"></div>
+                        </div>
+                    </div>
+                </div>
+
                 <div id="section-f1-popularity__racetrack-map-block" class="section-content">
                     <div class="grid-col-2" id="grid-racetrack-map">
                         <div class="sticky">
@@ -154,7 +172,7 @@
             </div>
 
             <div class="step section double" id="section-f1-evolution" data-sidemenu-id="sidemenu-f1-evolution"
-                data-heading-text="Evolution of F1" data-type="progressive">
+                data-heading-text="EVOLUTION OF F1" data-type="progressive">
                 <div id="section-f1-evolution__cars" class="section-content">
                     <div class="grid-col-2" id="grid-cars">
                         <div class="sticky">
@@ -192,7 +210,7 @@
                                 <div>
                                     <input type="range" id="section-f1-evolution__cars__compare-slider"
                                         name="section-f1-evolution__cars__compare-slider" min="1950" max="2022" />
-                                    <div style="margin-top: 0.5rem;">
+                                    <div>
                                         <label for="section-f1-evolution__cars__compare-slider"
                                             id="section-f1-evolution__cars__compare-slider__label">Year</label>
                                     </div>
@@ -205,8 +223,7 @@
             </div>
 
         </div>
-        <div class="step section double" id="section-f1-evolution" data-sidemenu-id="sidemenu-f1-evolution"
-            data-heading-text="EVOLUTION OF F1" data-type="progressive"></div>
+
         <div class="step section double" id="section-turning-points" data-sidemenu-id="sidemenu-turning-points"
             data-heading-text="TURNING POINTS" data-type="progressive"></div>
 
@@ -216,7 +233,8 @@
         </div>
     </main>
 
-    <script src="script_m4.js" defer></script>
+    <script src="vis.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>

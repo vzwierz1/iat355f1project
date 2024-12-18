@@ -45,7 +45,7 @@
 }
 
 .map-textbox-container.active .map-textbox {
-    opacity: 1;
+    opacity: 1 !important;
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);

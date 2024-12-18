@@ -409,6 +409,7 @@ main {
 
 #hero-static__content header h2 {
     font-family: 'Formula1 Display-Black', sans-serif;
+    margin-top: -0.8rem;
 }
 
 #hero-static__content__prompt,
@@ -456,7 +457,7 @@ main {
 
 #popularity-static {
     height: 100%;
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(216, 216, 216);
 }
 
 #evolution-of-cars-static {
@@ -484,6 +485,7 @@ main {
     top: calc(var(--layout-top-padding) - 0.75rem);
     left: calc(var(--sidebar-width) + 4rem);
     background-color: #181818;
+    border-radius: 5px;
     z-index: 10;
 }
 
@@ -496,7 +498,11 @@ main {
 }
 
 #section-f1-popularity {
-    height: 300rem;
+    height: 675rem;
+}
+
+#section-f1-popularity .section-content {
+    margin-top: -600px;
 }
 
 #section-f1-popularity .section-content {
@@ -505,6 +511,10 @@ main {
 
 #section-f1-evolution {
     height: 300rem;
+}
+
+#section-f1-evolution .section-content {
+    margin-top: -600px;
 }
 
 .text-block {
@@ -517,6 +527,7 @@ main {
 
 .text-block-no-bg {
     width: 100%;
+    padding-left: 0.5rem;
     font-weight: 400;
 }
 
@@ -566,6 +577,12 @@ main {
     gap: 1rem;
 }
 
+.grid-row-2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
 .col-2 {
     grid-column-start: 2;
 }
@@ -603,6 +620,29 @@ blockquote p {
     display: inline;
 }
 
+#grid-sports-comparison {
+    height: 100%;
+    grid-template-rows: min-content max-content;
+}
+
+#grid-sports-comparison.grid-row-2 #section-f1-popularity__sports-comparison__charts {
+    top: 18rem;
+}
+
+#grid-sports-comparison.grid-col-2 {
+    grid-template-columns: 22rem max-content;
+    gap: 5rem;
+}
+
+.chart-default {
+    color: black;
+    background-color: white;
+}
+
+#section-f1-popularity__sports-comparison__chart-4, #section-f1-popularity__sports-comparison__chart-5 {
+    padding: 1rem;
+}
+
 #section-f1-popularity__racetrack-map-block {
     height: 100%;
 }
@@ -616,6 +656,7 @@ blockquote p {
 #racetrack-map {
     margin-top: 0.3rem;
     background-color: #181818;
+    border-radius: 6px;
     z-index: 10;
 }
 
@@ -669,10 +710,6 @@ blockquote p {
     height: 100%;
     grid-template-columns: 25rem 1fr;
     gap: 3rem;
-}
-
-#section-f1-evolution__cars__text p {
-    padding-left: 0.6rem;
 }
 
 #section-f1-evolution__cars__sub-heading {
@@ -747,11 +784,15 @@ input[type="checkbox"]:checked {
     margin-top: 3rem;
 }
 
+#section-f1-evolution__cars__compare-checkbox__label {
+    padding-left: 4px;
+    font-size: 1rem;
+}
+
 #section-f1-evolution__cars__compare-slider {
     width: 100%;
 }
 
-#section-f1-evolution__cars__compare-checkbox__label {
-    padding-left: 3px;
-    font-size: 0.9rem;
+#section-f1-evolution__cars__compare-slider__label {
+    font-size: 1.1rem;
 }
