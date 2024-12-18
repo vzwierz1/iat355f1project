@@ -463,7 +463,7 @@ main {
 #evolution-of-cars-static {
     height: 100%;
     background-color: #181818;
-   
+
 }
 
 .section {
@@ -625,8 +625,18 @@ blockquote p {
     grid-template-rows: min-content max-content;
 }
 
+#section-f1-popularity__sports-comparison__charts__sub-heading {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #181818;
+}
+
 #grid-sports-comparison.grid-row-2 #section-f1-popularity__sports-comparison__charts {
     top: 18rem;
+    padding: 0 0.5rem;
 }
 
 #grid-sports-comparison.grid-col-2 {
@@ -639,7 +649,8 @@ blockquote p {
     background-color: white;
 }
 
-#section-f1-popularity__sports-comparison__chart-4, #section-f1-popularity__sports-comparison__chart-5 {
+#section-f1-popularity__sports-comparison__chart-4,
+#section-f1-popularity__sports-comparison__chart-5 {
     padding: 1rem;
 }
 
@@ -669,7 +680,7 @@ blockquote p {
     pointer-events: none;
 }
 
-#racetrack-map-textboxes > div {
+#racetrack-map-textboxes>div {
     position: absolute;
 }
 
@@ -680,7 +691,8 @@ blockquote p {
     text-shadow: none;
 }
 
-#racetrack-map-textboxes .map-textbox::before, #racetrack-map-textboxes .map-textbox::after {
+#racetrack-map-textboxes .map-textbox::before,
+#racetrack-map-textboxes .map-textbox::after {
     border-top: 10px solid rgba(255, 255, 255, 0.9);
 }
 
@@ -752,11 +764,11 @@ blockquote p {
 input[type='range'],
 input[type="range"]::-moz-range-progress {
     height: 3px;
-    background-color: #e74c3c; 
+    background-color: #e74c3c;
 }
 
 input[type='range']::-webkit-slider-runnable-track,
-input[type="range"]::-moz-range-track {  
+input[type="range"]::-moz-range-track {
     height: 3px;
     background-color: #505050;
 }
@@ -772,7 +784,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-    background-color: #e74c3c; 
+    background-color: #e74c3c;
 }
 
 #section-f1-evolution__cars__car-graphic__year-slider__label {

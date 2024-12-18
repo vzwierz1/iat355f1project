@@ -25,7 +25,7 @@ function getPlot_MostPopularSportsGlobal(width, height) {
         height: height,
         color: { scheme: "reds" },
         marks: [
-            Plot.barX(data_MostPopularSportsGlobal, Plot.stackX({ x: "Estimated Viewers", fill: "Sport", fillOpacity: 0.3, inset: 0.5 })),
+            Plot.barX(data_MostPopularSportsGlobal, Plot.stackX({ x: "Estimated Viewers", fill: "Sport", fillOpacity: d => d["Sport"] == "Formula 1/Grand Prix racing" ? 0.9 : 0.3, inset: 0.5 })),
             Plot.textX(data_MostPopularSportsGlobal, Plot.stackX({ x: "Estimated Viewers", text: (d) => d["Estimated Viewers"] > 200000000 ? `${d["Sport"]}      ${d3.format(".2s")(d["Estimated Viewers"]).replace(/G/, "B")}` : '', inset: 0.5, rotate: -90, fontSize: 12 })),
             Plot.axisX({ ticks: [] }),
         ]
@@ -40,7 +40,7 @@ function getPlot_MostPopularSportsGlobal_Filtered(width, height) {
         width: 1100,
         color: { scheme: "reds" },
         marks: [
-            Plot.barX(data_MostPopularSportsGlobal_Filtered, Plot.stackX({ x: "Estimated Viewers", fill: "Sport", fillOpacity: 0.3, inset: 0.5 })),
+            Plot.barX(data_MostPopularSportsGlobal_Filtered, Plot.stackX({ x: "Estimated Viewers", fill: "Sport", fillOpacity: d => d["Sport"] == "Formula 1/Grand Prix racing" ? 0.9 : 0.3, inset: 0.5 })),
             Plot.textX(data_MostPopularSportsGlobal_Filtered, Plot.stackX({ x: "Estimated Viewers", text: (d) => `${d["Sport"]}      ${d3.format(".2s")(d["Estimated Viewers"])}`, inset: 0.5, rotate: -90, fontSize: 12 })),
             Plot.axisX({ ticks: [] }),
         ]

@@ -184,6 +184,7 @@ function progressSection_PopularityOfF1(progress) {
     const numSteps = 9;
     const currentStep = Math.floor(progress * numSteps);
     let paragraphText;
+    let chartTitle;
 
     if (currentStep !== popularityOfF1_CurrentStep) {
         if (currentStep >= 0 && currentStep < 5) {
@@ -211,6 +212,7 @@ function progressSection_PopularityOfF1(progress) {
 
                 case 2:
                     paragraphText = "In fact, the amount of F1 and Grand Prix racing viewers is comparable to other popular sports like MMA, basketball and golf.";
+                    chartTitle = "Most Popular Sports Globally (With Estimated Viewership Under 1 Billion)";
                     document.getElementById('section-f1-popularity__sports-comparison__chart-3').classList.remove('hidden');
                     break;
 
@@ -230,6 +232,7 @@ function progressSection_PopularityOfF1(progress) {
             }
 
             document.querySelector('#sports-comparison-text p').innerText = paragraphText;
+            document.querySelector('#section-f1-popularity__sports-comparison__charts__sub-heading').innerText = chartTitle;
         }
 
         if (currentStep >= 5) {
