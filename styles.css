@@ -467,7 +467,7 @@ main {
 
 #tracking-safety-static {
     height: 100%;
-    background-color: #e9685a;
+    background-color: #c05247;
 }
 
 .section {
@@ -686,6 +686,10 @@ blockquote p {
     height: 100%;
 }
 
+#section-f1-popularity__racetrack-map-block #section-f1-popularity__sports-comparison__charts__sub-heading {
+    margin-bottom: -0.5rem;
+}
+
 #grid-racetrack-map {
     height: 100%;
     grid-template-columns: 19rem max-content;
@@ -837,6 +841,33 @@ input[type="checkbox"]:checked {
     font-size: 1.1rem;
 }
 
-#section-f1-popularity__racetrack-map-block #section-f1-popularity__sports-comparison__charts__sub-heading {
-    margin-bottom: -0.5rem;
+#section-tracking-safety .text-block {
+    height: min-content;
 }
+
+#section-tracking-safety .grid-col-2 {
+    gap: 3rem;
+}
+
+#section-tracking-safety .text-block-no-bg {
+    margin-top: -0.2rem;
+}
+
+#section-tracking-safety__chart-1 {
+    grid-template-columns: 20rem 1fr;
+}
+
+#section-tracking-safety__chart-2 {
+    margin-top: 4rem;
+    grid-template-columns: 1fr 26rem;
+}
+
+#section-tracking-safety__chart-2.grid-col-2 {
+    gap: 2rem !important;
+}
+
+#section-tracking-safety img {
+    border-radius: 5px;
+    object-fit: cover;
+}
+
