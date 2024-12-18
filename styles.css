@@ -526,7 +526,7 @@ main {
 }
 
 #section-turning-points .section-content {
-    margin-top: -200px;
+    margin-top: -250px;
 }
 
 #section-turning-points .grid-col-2 {
@@ -542,7 +542,7 @@ main {
 }
 
 #section-tracking-safety .section-content {
-    margin-top: 100px;
+    margin-top: -300px;
 }
 
 .text-block {
@@ -858,7 +858,7 @@ input[type="checkbox"]:checked {
 }
 
 #section-tracking-safety__chart-2 {
-    margin-top: 4rem;
+    margin-top: 8rem;
     grid-template-columns: 1fr 26rem;
 }
 
