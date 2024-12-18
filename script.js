@@ -200,12 +200,12 @@ function progressSection_PopularityOfF1(progress) {
 
             switch (currentStep) {
                 case 0:
-                    paragraphText = "Top 22 global sports by the number of watchers in 2024. It may seem compared to giants like soccer, hockey and boxing F1 enjoys a much more niche viewership";
+                    paragraphText = "In the world of sports, numbers speak volumes. While boxing, soccer, and cricket dominate viewership charts globally, Formula 1 is speeding its way into the conversation; especially in North America. Once considered a niche motorsport in the U.S. and Canada, F1’s popularity is accelerating faster than ever, largely fueled by Netflix’s Drive to Survive series and an increased focus on the North American market.";
                     document.getElementById('section-f1-popularity__sports-comparison__chart-1').classList.remove('hidden');
                     break;
 
                 case 1:
-                    paragraphText = "However, if we take only those sports whose estimated global audience is less than 1 billion we can see F1 falls into quite a chunk.";
+                    paragraphText = "Focusing exclusively on sports with viewerships under 1 billion, Formula 1 emerges as a significant contender, attracting 500 million viewers worldwide. This places it ahead of American favorites such as basketball, which captures 400 million viewers, and American football, with 410 million fans. Yet, it trails behind volleyball and swimming, with massive followings of 900 million and 830 million respectively.";
                     document.getElementById('section-f1-popularity__sports-comparison__chart-2').classList.remove('hidden');
                     break;
 
@@ -215,14 +215,14 @@ function progressSection_PopularityOfF1(progress) {
                     break;
 
                 case 3:
-                    paragraphText = "Even more so, if we focus on North America, last 7 years F1 has been steadily becoming more popular while the historically beloved NASCAR racing although still dominating in the region experienced a bit of a decline.";
+                    paragraphText = "Even more so, if we focus on North America, the last 7 years F1 has been steadily becoming more popular while the historically beloved NASCAR racing, although still dominating in the region, experienced a bit of a decline.";
                     document.getElementById('grid-sports-comparison').classList.add('grid-col-2');
                     document.getElementById('grid-sports-comparison').classList.remove('grid-row-2');
                     document.getElementById('section-f1-popularity__sports-comparison__chart-4').classList.remove('hidden');
                     break;
 
                 case 4:
-                    paragraphText = "We can see this trend more closely if we look only into the differences of viewership compared to the previous year.";
+                    paragraphText = "We can see this trend more closely if we look only into the differences of viewership, between F1 and NASCAR, compared to the previous year.";
                     document.getElementById('grid-sports-comparison').classList.add('grid-col-2');
                     document.getElementById('grid-sports-comparison').classList.remove('grid-row-2');
                     document.getElementById('section-f1-popularity__sports-comparison__chart-5').classList.remove('hidden');
