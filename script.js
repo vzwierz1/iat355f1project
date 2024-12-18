@@ -215,7 +215,7 @@ function progressSection_PopularityOfF1(progress) {
                     break;
 
                 case 3:
-                    paragraphText = "Even more so, if we focus on North America, the last 7 years F1 has been steadily becoming more popular while the historically beloved NASCAR racing, although still dominating in the region, experienced a bit of a decline.";
+                    paragraphText = "Even more so, if we focus on North America, over the last 7 years, F1 has steadily grown in popularity. Meanwhile, the historically beloved NASCAR racing, although still dominant in the region, has experienced a slight decline.";
                     document.getElementById('grid-sports-comparison').classList.add('grid-col-2');
                     document.getElementById('grid-sports-comparison').classList.remove('grid-row-2');
                     document.getElementById('section-f1-popularity__sports-comparison__chart-4').classList.remove('hidden');
