@@ -38,7 +38,10 @@
                     <li id="sidemenu-f1-evolution"><a href="#section-f1-evolution">Evolution of Cars</a>
                         <div></div>
                     </li>
-                    <li id="sidemenu-turning-points"><a href="#vis2">Turning Points</a>
+                    <li id="sidemenu-turning-points"><a href="#section-turning-points">Turning Points</a>
+                        <div></div>
+                    </li>
+                    <li id="sidemenu-tracking-safety"><a href="#section-tracking-safety">Tracking Safety</a>
                         <div></div>
                     </li>
                 </ul>
@@ -68,8 +71,8 @@
             </div>
 
             <div id="popularity-static" class="static-right-pane hidden"></div>
-
             <div id="evolution-of-cars-static" class="static-right-pane hidden"></div>
+            <div id="tracking-safety-static" class="static-right-pane hidden"></div>
 
             <div class="step section hero" id="section-hero" data-sidemenu-hidden="true" data-heading-hidden="true">
             </div>
@@ -127,11 +130,16 @@
 
                         <div id="section-f1-popularity__sports-comparison__charts" class="sticky">
                             <h4 id="section-f1-popularity__sports-comparison__charts__sub-heading"></h4>
-                            <div id="section-f1-popularity__sports-comparison__chart-1" class="chart-default hidden"></div>
-                            <div id="section-f1-popularity__sports-comparison__chart-2" class="chart-default hidden"></div>
-                            <div id="section-f1-popularity__sports-comparison__chart-3" class="chart-default hidden"></div>
-                            <div id="section-f1-popularity__sports-comparison__chart-4" class="chart-default hidden"></div>
-                            <div id="section-f1-popularity__sports-comparison__chart-5" class="chart-default hidden"></div>
+                            <div id="section-f1-popularity__sports-comparison__chart-1" class="chart-default hidden">
+                            </div>
+                            <div id="section-f1-popularity__sports-comparison__chart-2" class="chart-default hidden">
+                            </div>
+                            <div id="section-f1-popularity__sports-comparison__chart-3" class="chart-default hidden">
+                            </div>
+                            <div id="section-f1-popularity__sports-comparison__chart-4" class="chart-default hidden">
+                            </div>
+                            <div id="section-f1-popularity__sports-comparison__chart-5" class="chart-default hidden">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -145,26 +153,37 @@
                         </div>
 
                         <div class="sticky">
+                            <h4 id="section-f1-popularity__sports-comparison__charts__sub-heading">Explore the Circuits: Interactive Map of Formula 1 Tracks Worldwide</h4>
                             <div id="racetrack-map"></div>
                             <div id="racetrack-map-textboxes">&nbsp;
                                 <div id="racetrack-map-textboxes__box_monaco" class="map-textbox-container">
-                                    <div class="map-textbox">During the 82nd lap, Bandini’s Ferrari struck the guardrail at the Harbor
-                                         Chicane, overturning and catching fire. Trapped under the car, he suffered severe burns and 
-                                         passed away three days later. This tragedy led to improved safety measures in F1, including
-                                          faster emergency response and better fire protection.</div>
+                                    <div class="map-textbox">During the 82nd lap, Bandini’s Ferrari struck the guardrail
+                                        at the Harbor
+                                        Chicane, overturning and catching fire. Trapped under the car, he suffered
+                                        severe burns and
+                                        passed away three days later. This tragedy led to improved safety measures in
+                                        F1, including
+                                        faster emergency response and better fire protection.</div>
                                 </div>
                                 <div id="racetrack-map-textboxes__box_suzuka" class="map-textbox-container">
-                                    <div class="map-textbox">During the 2014 Japanese Grand Prix at Suzuka, Jules Bianchi lost control
-                                         in wet conditions and collided with a recovery vehicle attending to another incident. He suffered
-                                          severe head injuries and passed away in July 2015. This tragedy led to significant safety 
-                                          reforms in Formula 1, including the introduction of the Virtual Safety Car system to better
-                                           protect drivers during hazardous conditions.</div>
+                                    <div class="map-textbox">During the 2014 Japanese Grand Prix at Suzuka, Jules
+                                        Bianchi lost control
+                                        in wet conditions and collided with a recovery vehicle attending to another
+                                        incident. He suffered
+                                        severe head injuries and passed away in July 2015. This tragedy led to
+                                        significant safety
+                                        reforms in Formula 1, including the introduction of the Virtual Safety Car
+                                        system to better
+                                        protect drivers during hazardous conditions.</div>
                                 </div>
                                 <div id="racetrack-map-textboxes__box_monaco2" class="map-textbox-container">
-                                    <div class="map-textbox">In the 1955 Monaco Grand Prix, leader Alberto Ascari misjudged the chicane, 
-                                        sending his car into the harbor. Remarkably, he escaped and was rescued by a boat, but tragically,
-                                         he died in a separate accident at Monza just four days later. This incident spurred improvements 
-                                         in safety barriers and emergency responses at the Monaco circuit.</div>
+                                    <div class="map-textbox">In the 1955 Monaco Grand Prix, leader Alberto Ascari
+                                        misjudged the chicane,
+                                        sending his car into the harbor. Remarkably, he escaped and was rescued by a
+                                        boat, but tragically,
+                                        he died in a separate accident at Monza just four days later. This incident
+                                        spurred improvements
+                                        in safety barriers and emergency responses at the Monaco circuit.</div>
                                 </div>
                             </div>
                         </div>
@@ -186,7 +205,8 @@
                         <div id="section-f1-evolution__cars__main" class="sticky">
                             <div id="section-f1-evolution__cars__car-graphic">
                                 <img id="section-f1-evolution__cars__car-graphic__image" alt="f1 car graphic" />
-                                <img id="section-f1-evolution__cars__car-graphic__overlay-image" class="hidden" alt="f1 car graphic comparison overlay" />
+                                <img id="section-f1-evolution__cars__car-graphic__overlay-image" class="hidden"
+                                    alt="f1 car graphic comparison overlay" />
 
                                 <input type="range" id="section-f1-evolution__cars__car-graphic__year-slider"
                                     name="section-f1-evolution__cars__car-graphic__year-slider" min="0" max="19" />
@@ -201,10 +221,10 @@
 
                             <div id="section-f1-evolution__cars__overlay-controls">
                                 <div style="display: flex; align-items: center;">
-                                    <input type="checkbox"
-                                        id="section-f1-evolution__cars__compare-checkbox"
+                                    <input type="checkbox" id="section-f1-evolution__cars__compare-checkbox"
                                         name="section-f1-evolution__cars__compare-checkbox" />
-                                    <label for="section-f1-evolution__cars__compare-checkbox" id="section-f1-evolution__cars__compare-checkbox__label">Compare a
+                                    <label for="section-f1-evolution__cars__compare-checkbox"
+                                        id="section-f1-evolution__cars__compare-checkbox__label">Compare a
                                         Car</label>
                                 </div>
 
@@ -218,15 +238,56 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
 
-        </div>
+            <div class="step section turning-points" id="section-turning-points"
+                data-sidemenu-id="sidemenu-turning-points" data-heading-text="TURNING POINTS" data-type="progressive">
+                <div class="section-content">
+                    <div class="grid-col-2">
+                        <div class="text-block-no-bg">
+                            <p>Two drivers, Jules Bianchi and Ayrton Senna, left lasting legacies in Formula 1, as
+                                their tragic deaths led
+                                to crucial safety advancements in the sport.</p>
+                            <br />
+                            <p>Ayrton Senna’s death in 1994 during the San Marino Grand Prix prompted major changes
+                                in car design, track
+                                safety, and driver protection standards, such as improved crash structures and head
+                                support systems.</p>
+                        </div>
+                        <div class="col-2">
+                            <img src="i/senna.png" alt="Senna" style="width: 80%; height: auto; border-radius: 15px;" />
+                        </div>
+                    </div>
 
-        <div class="step section double" id="section-turning-points" data-sidemenu-id="sidemenu-turning-points"
-            data-heading-text="TURNING POINTS" data-type="progressive"></div>
+                    <div class="grid-col-2" style="margin-top: 10rem;">
+                        <div>
+                            <img src="i/jules.png" alt="Jules"
+                                style="width: 80%; height: auto; border-radius: 15px; filter: grayscale(100%);" />
+                        </div>
+                        <div class="text-block-no-bg col-2">
+                            <p>Jules Bianchi’s fatal accident in 2014 emphasized the need for additional cockpit
+                                protection, which led to
+                                the introduction of the halo device in 2018, now a critical safety feature.</p>
+                            <br />
+                            <p>These turning points remind us how F1 continues to evolve to protect its drivers
+                                while pushing the
+                                boundaries of speed and innovation.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="step section tracking-safety" id="section-tracking-safety"
+                data-sidemenu-id="sidemenu-tracking-safety" data-heading-text="TRACKING SAFETY" data-type="progressive">
+                <div class="section-content">
+                    <div class="text-block-no-bg">123</div>
+                </div>
+            </div>
+
+        </div>
 
         <div id="section-header">
             <h1></h1>

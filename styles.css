@@ -463,7 +463,11 @@ main {
 #evolution-of-cars-static {
     height: 100%;
     background-color: #181818;
+}
 
+#tracking-safety-static {
+    height: 100%;
+    background-color: #e9685a;
 }
 
 .section {
@@ -515,6 +519,30 @@ main {
 
 #section-f1-evolution .section-content {
     margin-top: -600px;
+}
+
+#section-turning-points {
+    height: 100rem;
+}
+
+#section-turning-points .section-content {
+    margin-top: -200px;
+}
+
+#section-turning-points .grid-col-2 {
+    gap: 5rem;
+}
+
+#section-turning-points p {
+    max-width: 30rem;
+}
+
+#section-tracking-safety {
+    height: 100rem;
+}
+
+#section-tracking-safety .section-content {
+    margin-top: 100px;
 }
 
 .text-block {
@@ -807,4 +835,8 @@ input[type="checkbox"]:checked {
 
 #section-f1-evolution__cars__compare-slider__label {
     font-size: 1.1rem;
+}
+
+#section-f1-popularity__racetrack-map-block #section-f1-popularity__sports-comparison__charts__sub-heading {
+    margin-bottom: -0.5rem;
 }

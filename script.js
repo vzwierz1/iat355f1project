@@ -7,6 +7,9 @@ const sections = {
     INTRO: 2,
     POPULARITY_OF_F1: 3,
     EVOLUTION_OF_CARS: 4,
+    TURNING_POINTS: 5,
+    TRACKING_SAFETY: 6,
+    CLOSING: 7,
 }
 
 const carImageAnimFrameLen = 1000;  // ms
@@ -71,6 +74,15 @@ scroller
             case sections.EVOLUTION_OF_CARS:
                 renderSection_EvolutionOfF1();
                 break;
+            case sections.TURNING_POINTS:
+                renderSection_TurningPoints();
+                break;
+            case sections.TRACKING_SAFETY:
+                renderSection_TrackingSafety();
+                break;
+            case sections.CLOSING:
+                renderSection_Closing();
+                break;
         }
         console.log(response);
     })
@@ -112,6 +124,7 @@ function renderSections_Reset() {
     document.getElementById('intro-static').classList.add('hidden');
     document.getElementById('popularity-static').classList.add('hidden');
     document.getElementById('evolution-of-cars-static').classList.add('hidden');
+    document.getElementById('tracking-safety-static').classList.add('hidden');
 
     document.getElementById('backdrop').classList.remove('collapsed');
     document.getElementById('backdrop').classList.remove('color-bg-dark-teal');
@@ -121,6 +134,9 @@ function renderSections_Reset() {
     document.querySelector('#section-f1-popularity__sports-comparison').classList.add('hidden');
     document.querySelector('#section-f1-popularity__racetrack-map-block').classList.add('hidden');
     document.querySelector('#section-f1-evolution .section-content').classList.add('hidden');
+
+    document.querySelector('#section-turning-points .section-content').classList.add('hidden');
+    document.querySelector('#section-tracking-safety .section-content').classList.add('hidden');
 }
 
 function renderSection_Hero() {
@@ -342,6 +358,18 @@ function progressSection_EvolutionOfF1(progress) {
     }
 
     evolutionOfF1_CurrentStep = currentStep;
+}
+
+function renderSection_TurningPoints() {
+    document.querySelector('#section-turning-points .section-content').classList.remove('hidden');
+}
+
+function renderSection_TrackingSafety() {
+    document.getElementById('tracking-safety-static').classList.remove('hidden');
+    document.querySelector('#section-tracking-safety .section-content').classList.remove('hidden');
+}
+
+function renderSection_Closing() {
 }
 
 async function loadData() {
